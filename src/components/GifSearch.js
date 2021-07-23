@@ -15,11 +15,13 @@ class GifSearch extends React.Component {
     }
     render() {
         return (
+            <div>Enter a Search term: 
             <form onSubmit={this.props.handleSubmit}>
+                
                 <input type="text" value={this.state.term} onChange={this.handleChange}></input>
-                <input type="submit" value="Submit" />
+                <input type="submit" value="Find Gifs" />
             </form>
-           
+           </div>
         )
     }
 }
